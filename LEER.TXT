@@ -1,0 +1,14 @@
+Librerias instaladas:
+
+-bootstrap (Navbar)
+
+-MDB bootstrap (Carrousel, Formulario, Footer)
+
+-GoogleMaps (No se ha usado al final)
+
+-Leaflet (Mapa de la clinica. Gracias Miriam por la ayuda.)
+
+-react-responsive-carousel (Carrusel de imagenes. Se dejo de usar despues de importar la libreria de MDB bootstrap)
+
+-react-reveal (Animaciones de los componentes)
+

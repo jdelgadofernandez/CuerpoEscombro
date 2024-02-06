@@ -1,13 +1,580 @@
 body {
   margin: 0;
+  background-color: #0B132B !important; 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important; 
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+header{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#loader{
+  margin-left: 0%;
+}
+
+
+/* Seccion Navbar*/
+#navB{
+  background-color: #1c2540c2 !important;
+  height: 70px;
+}
+
+#nave{
+  margin-left: 25.5%;
+  margin-top: 0.25%;
+}
+
+#nave img{
+  width: 5%;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: #5BC0BE !important;
+  transition: 0.5s ease !important;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+  color: #6FFFE9 !important;
+  font-size: 18px;
+}
+
+.nav-link:active{
+  color: #5BC0BE !important;
+}
+
+#navegador{
+  z-index: 10;
+  position: fixed;
+  top: 6.6%;
+  width: 100%;
+}
+
+.titulos{
+  color: #212529;
+}
+
+#nombre{
+  color: white;
+}
+
+
+
+/*
+Partes compartidas de componenetes
+titulos
+subtitulos 
+descripciones
+*/
+
+.titulo{
+  color: #5BC0BE ;
+  font-size: 22px;
+}
+
+
+
+.subtitulo{
+  color: white;
+}
+
+.descripcion{
+  color: rgb(180, 180, 180);
+  font-size: 20px;
+}
+
+/* Margenes de todas las div*/
+
+#portada{
+  padding-top: 8%;
+  margin-bottom: 20%;
+}
+
+#servicios{
+  padding-top: 8%;
+  margin-bottom: 5%;
+}
+
+#personal{
+  padding-top: 8%;
+  margin-bottom: 6%;
+}
+
+#pricing{
+  padding-top: 8%;
+  margin-bottom: 6%;
+}
+
+#lugar{
+  padding-top: 8%;
+  margin-bottom: 8%;
+}
+
+#formulario{
+  padding-top: 8%;
+}
+
+/* Seccion portada*/
+
+#portada{
+  
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#portada .descripcion{
+  font-size: 32px;
+}
+
+#tituloP{
+  
+  font-size: 15px;
+  color: white;
+}
+
+#divTabla{
+  text-align: center;
+}
+
+.tablaP{
+  margin: 0 auto;
+}
+
+.seguros{
+  width: 90px;
+  height: 90px;
+  transition: 0.5s ease;
+  filter: invert(77%) sepia(93%) saturate(1383%) hue-rotate(160deg) brightness(88%) contrast(99%);
+
+
+}
+
+.seguros:hover{
+  width: 110px;
+  height: 110px;
+  filter: invert(68%) sepia(73%) saturate(297%) hue-rotate(163deg) brightness(105%) contrast(106%);
+}
+
+#botonP{
+  margin-top: 110px;
+  background-color: #5BC0BE !important;
+  font-size: 25px;
+  color: white !important;
+}
+
+
+
+/* Zona de servicios con el carrousel*/
+
+#servicios{
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+#carousel{
+  width: 80%;
+  top: 50%;
+  left: 10%;
+  
+}
+
+.tituloC{
+  
+  background: linear-gradient(97deg, #5BC0BE00 0%, #5BC0BE 50%, #5BC0BE00 100%);
+  margin-bottom: 0;
+  width: 100%;
+}
+.descripcionC{
+  background: rgb(92,92,92);
+  background: linear-gradient(97deg, #5bc0be00 0%, #5BC0BE 50%, #5bc0be00 100%);
+  color: #212529;
+  font-weight: bold;
+}
+
+
+/*Zona personal de la clinica*/
+
+#personal{
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+  width: auto;
+  margin-bottom: 150px;
+}
+
+#gentes{
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  margin-left: 10%;
+  gap: 1%;
+}
+
+.gente{
+  width: 40%;
+  color: #5BC0BE  !important;  
+
+}
+
+.gente h5{
+  font-size: 14px !important;
+
+}
+
+
+/* Zona precios */
+
+#pricing{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#precios{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}
+
+#precios div{
+  background-color: #3A506B;
+  color: white;
+}
+
+#precios h3{
+
+  color: #5BC0BE;
+
+}
+
+#esencial{
+  background-color: #0B132B !important;
+  margin-top:18.5%;
+  color: #6FFFE9 !important;
+}
+
+#mejor{
+  background-color: #5BC0BE !important;
+  color: white !important;
+} 
+
+#mejor h3{
+  color: #1C2541;
+}
+
+#bMejor{
+  background-color: #6FFFE9 !important;
+  margin-top: 8%;
+  color: #0B132B;
+}
+
+#etiquet{
+  background-color: #347271 !important;
+}
+
+#avan{
+  background-color: #0B132B !important;
+  color: #6FFFE9 !important;
+  margin-top: 5%;
+  margin-bottom: 4.9%;
+}
+
+/* Zona formulario */
+
+#formulario{
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+#form6Example1,#form6Example2,#form6Example3,#form6Example4,#form6Example5,#form6Example6,#form6Example7{
+  background-color: #0e293b;
+  color: white;
+}
+
+#botonForm{
+  background-color: #5BC0BE !important;
+  color: white !important;
+}
+
+
+/*Zona mapa*/
+
+
+
+.leaflet-container{
+  z-index: 1;
+}
+
+/* Zona footer */
+
+.footerEntero{
+  background-color: #5BC0BE !important;
+}
+
+.copy{
+  color: #0B132B;
+}
+
+.redes{
+  color: #3A506B !important;
+}
+
+
+/*Zona ticker aka parte de arriba que se mueve*/
+@-webkit-keyframes ticker {
+  0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+  }
+  100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+  }
+  100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  z-index: 10;
+
+  position: fixed;
+  display: inline-flex;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(184, 47, 47, 0.9);
+  text-transform: uppercase;
+  background: repeating-linear-gradient(
+  45deg,
+  rgba(184, 47, 47, 0.95),
+  rgba(184, 47, 47, 0.95) 10px,
+  rgba(143, 38, 38, 0.95) 10px,
+  rgba(122, 31, 31, 0.95) 20px
+);
+}
+
+.ticker-wrap .ticker,
+.ticker-wrap .ticker2 {
+  display: inline-block;
+  height: 4rem;
+  padding-left: 1rem;
+  line-height: 4rem;
+  white-space: nowrap;
+}
+
+.ticker-wrap .ticker,
+.ticker-wrap .ticker2 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+}
+
+.ticker-wrap .ticker2 {
+  left: 100%;
+}
+
+.ticker-wrap .ticker__item {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+/*Responsive tablet y moviles grandes*/
+
+@media only screen and (min-width: 600px) and (max-width:880px) {
+
+  
+
+  #portada{
+    padding-top: 20%;
+  }
+
+  #nave img{
+    margin-left: 25%;
+    width: 10%;
+    margin-top: 2%;
+  }
+
+
+  #nombre{
+    display: none;
+  }
+
+
+  .barrita{
+    display: none !important;
+    
+  }
+
+  .texto{
+    font-size: 12px;   
+  }
+
+
+  #personal{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    width: auto;
+    margin-bottom: 150px;
+  }
+  
+  #gentes{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    margin-left: 10%;
+    gap: 1%;
+    
+  }
+  
+  .gente{
+    width: 50%;
+    color: #5BC0BE  !important;  
+  }
+
+  .gente h5{
+    font-size: 14px !important;
+
+  }
+
+  #precios{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1%;
+  }
+
+  #esencial{
+
+    margin-top:0%;
+    margin-bottom: 4%;
+  }
+
+  #bMejor{
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+}
+
+
+@media only screen and (max-width:600px) {
+  #portada{
+    padding-top: 30%;
+  }
+
+  #nave img{
+    margin-left: 25%;
+    width: 17%;
+    margin-top: 2%;
+  }
+
+
+  #nombre{
+    display: none;
+  }
+
+  
+
+
+  .barrita{
+    display: none !important;
+    
+  }
+
+  .seguros{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s ease;
+    filter: invert(77%) sepia(93%) saturate(1383%) hue-rotate(160deg) brightness(88%) contrast(99%);
+  
+  
+  }
+  
+  .seguros:hover{
+    width: 50px;
+    height: 50px;
+    filter: invert(68%) sepia(73%) saturate(297%) hue-rotate(163deg) brightness(105%) contrast(106%);
+  }
+
+
+
+ 
+
+  #personal{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    width: auto;
+    margin-bottom: 150px;
+  }
+  
+  #gentes{
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    margin-left: 30%;
+    
+    
+  }
+  
+  .gente{
+    width: 100%;
+    color: #5BC0BE  !important;  
+  }
+
+  .gente h5{
+    font-size: 11px !important;
+
+  }
+
+  #precios{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1%;
+  }
+
+  #esencial{
+
+    margin-top:0%;
+    margin-bottom: 4%;
+  }
+
+  #bMejor{
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
 }
